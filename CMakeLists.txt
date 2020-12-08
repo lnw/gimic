@@ -6,6 +6,7 @@ cmake_minimum_required(VERSION 3.12 FATAL_ERROR)
 
 # project name
 project(gimic Fortran C CXX)
+set(CMAKE_VERBOSE_MAKEFILE FALSE)
 
 # do not rebuild if rules (compiler flags) change
 set(CMAKE_SKIP_RULE_DEPENDENCY TRUE)

@@ -67,7 +67,7 @@ cython_add_module(gimic
     gimic.pyx
     )
 target_link_libraries(gimic
-    gimic2 ${PYTHON_LIBRARIES}
+    gimic2 ${Python3_LIBRARIES}
     )
 
 cython_add_module(gengauss
@@ -75,7 +75,7 @@ cython_add_module(gengauss
     gengauss.pyx
     )
 target_link_libraries(gengauss
-    gimic2 ${PYTHON_LIBRARIES}
+    gimic2 ${Python3_LIBRARIES}
     )
 install(TARGETS gimic gengauss
     ARCHIVE DESTINATION ${PYTHON_SITE_INSTALL_DIR}

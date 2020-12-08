@@ -5,7 +5,7 @@ if (CYTHON_FOUND)
         connector.pxd
         connector.pyx
 	)
-    target_link_libraries( connector ${PYTHON_LIBRARIES} )
+    target_link_libraries( connector ${Python3_LIBRARIES} )
 install(TARGETS connector
     RUNTIME DESTINATION bin
     LIBRARY DESTINATION ${PYTHON_SITE_INSTALL_DIR}
